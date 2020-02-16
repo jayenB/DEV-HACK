@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DiseaseResultss">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:text="Back"
+        android:textColor="@color/login_form_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="296dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="104dp"
+        android:text="Medical Report"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/login_form_details"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/qef"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:text="Name:"
+        android:textColor="@color/login_form_details"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/aahh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="99dp"
+        android:text="Self care:"
+        android:textColor="@color/login_form_details"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="26dp"
+        android:text="Meds:"
+        android:textColor="@color/login_form_details"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="215dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  "
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintStart_toEndOf="@+id/qef"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/selfcare"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintStart_toEndOf="@+id/qef"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/drug"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/selfcare" />
+
+    <EditText
+        android:id="@+id/dosage"
+        android:layout_width="218dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/meds" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="26dp"
+        android:text="Dosage:"
+        android:textColor="@color/login_form_details"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="112dp"
+        android:text="Drug:"
+        android:textColor="@color/login_form_details"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qef" />
+
+    <EditText
+        android:id="@+id/meds"
+        android:layout_width="216dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/drug" />
+
+    <Button
+        android:id="@+id/viewProfile"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/btn_bg"
+        android:text="View"
+        android:textColor="@color/login_form_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="34dp"
+        android:text="Gels:"
+        android:textColor="@color/login_form_details"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/gels"
+        android:layout_width="216dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/dosage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

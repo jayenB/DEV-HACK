@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/uploadImage"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@android:drawable/ic_menu_camera"
+        android:drawablePadding="0dp"
+        android:hint="Upload Image"
+        android:paddingTop="10dip"
+        android:paddingBottom="0dip"
+        android:singleLine="true"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@+id/editProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@android:drawable/ic_menu_my_calendar"
+        android:drawablePadding="0px"
+        android:hint="View Profile"
+        android:paddingTop="10dip"
+        android:paddingBottom="0dip"
+        android:singleLine="true"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/uploadImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="296dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="116dp"
+        android:text="Dashboard"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/login_form_details"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewResults"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginRight="161dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/btn_bg"
+        android:drawableTop="@android:drawable/ic_menu_zoom"
+        android:hint="View Results"
+        android:paddingTop="10dip"
+        android:paddingBottom="0dip"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

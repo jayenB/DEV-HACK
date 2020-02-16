@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UploadImage">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:text="Back"
+        android:textColor="@color/login_form_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/ggg" />
+
+    <EditText
+        android:id="@+id/txtdata"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+    <Button
+        android:id="@+id/btnbrowse"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/btn_bg"
+        android:drawableStart="@android:drawable/ic_menu_gallery"
+        android:drawablePadding="2dip"
+        android:gravity="center"
+        android:hint="Browse"
+        android:paddingLeft="90dip"
+        android:paddingRight="120dip"
+        android:singleLine="true"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdata" />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/btn_bg"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        android:hint="Confirm"
+        android:paddingLeft="90dip"
+        android:paddingRight="120dip"
+        android:singleLine="true"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbrowse" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
